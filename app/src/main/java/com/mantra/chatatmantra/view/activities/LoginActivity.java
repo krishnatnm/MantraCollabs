@@ -154,6 +154,7 @@ public class LoginActivity extends AppCompatActivity
     public void proceedPostLogin(String email) {
         if (isCorrectId(email)) {
             Toast.makeText(LoginActivity.this, "Login Request!", Toast.LENGTH_SHORT).show();
+            TabActivity_.intent(getApplicationContext()).flags(Intent.FLAG_ACTIVITY_NEW_TASK).start();
         } else {
             Auth.GoogleSignInApi.signOut(mGoogleApiClient);
             mGoogleApiClient.disconnect();
