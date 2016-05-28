@@ -1,5 +1,7 @@
 package com.mantra.chatatmantra.view.activities;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,21 +15,33 @@ import com.mantra.chatatmantra.R;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public static String TAG = "Login ==>";
+
+    Context context;
+
+    Toolbar toolbar;
+    FloatingActionButton fab;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        initView();
+        context = this;
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(context, Dashboard.class));
             }
         });
+    }
+
+    public void initView() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
     }
 
     @Override
