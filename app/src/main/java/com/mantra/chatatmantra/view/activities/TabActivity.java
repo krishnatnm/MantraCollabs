@@ -27,20 +27,20 @@ public class TabActivity extends AppCompatActivity {
     ViewPager viewPager;
 
     @AfterViews
-    public void init(){
+    public void init() {
         setupViewPager(viewPager);
         tabs.setupWithViewPager(viewPager);
 
 
     }
+
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new ContactFragment_(), "Appointment");
         adapter.addFrag(new ChatListFragment_(), "Chats");
         adapter.addFrag(new AppointmentFragment_(), "Contacts");
         viewPager.setAdapter(adapter);
+
+        viewPager.setCurrentItem(1);
     }
-
-
-
 }
