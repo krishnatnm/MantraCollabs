@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1085820159196",
+    "project_id": "mantra-chat-app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085820159196:android:3fdacf310335ef51",
+        "android_client_info": {
+          "package_name": "com.mantra.chatatmantra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085820159196-656l20rn7t1gkpqi2e1im563cf3d4vke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mantra.chatatmantra",
+            "certificate_hash": "5C8DB229187AF07977B3E09A1FAB7F3C585F56CE"
+          }
+        },
+        {
+          "client_id": "1085820159196-00gkdhvflaf2fpjjqtki02mo9tv7s6tt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDITxZvs1rtTQvaxwpKGagsO4VYoBDVqjc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

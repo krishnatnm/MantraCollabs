@@ -12,8 +12,28 @@
     tools:context=".view.activities.LoginActivity"
     tools:showIn="@layout/activity_login">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/btnlogingplus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_gplus_button_bg"
+        android:gravity="center"
+        android:onClick="onGPlusButtonClick"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/gplus_left_width"
+            android:layout_height="@dimen/gplus_left_height"
+            android:background="@drawable/custom_left_drawable_temp_bg"
+            android:padding="@dimen/gplus_left_inner_padding"
+            android:src="@drawable/ic_gplus" />
+
+        <TextView
+            style="@style/social_button_style"
+            android:text="Sign Up via Google" />
+    </LinearLayout>
+
 </RelativeLayout>

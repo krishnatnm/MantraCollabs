@@ -26,17 +26,17 @@ public class LocalStorage {
         return instance;
     }
 
-    public String getToken() {
-        if (sharedPreferences.contains("TOKEN")) {
-            return sharedPreferences.getString("TOKEN", null);
+    public String getGoogleToken() {
+        if (sharedPreferences.contains("G_TOKEN")) {
+            return sharedPreferences.getString("G_TOKEN", null);
         } else {
             return null;
         }
     }
 
-    public void setToken(String token) {
+    public void setGoogleToken(String googleToken) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("TOKEN", token);
+        editor.putString("G_TOKEN", googleToken);
         editor.commit();
     }
 }
