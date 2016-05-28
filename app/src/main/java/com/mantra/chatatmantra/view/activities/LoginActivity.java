@@ -1,12 +1,4 @@
 package com.mantra.chatatmantra.view.activities;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -132,9 +124,9 @@ public class LoginActivity extends AppCompatActivity
             GoogleSignInAccount acct = result.getSignInAccount();
             String googleToken = acct.getIdToken();
             Log.d(TAG, "Google Token: " + googleToken);
-            String firstName = acct.getGivenName();
-            String lastName = acct.getFamilyName();
-            Log.d(TAG, "Name: " + firstName + " " + lastName);
+//            String firstName = acct.getGivenName();
+//            String lastName = acct.getFamilyName();
+//            Log.d(TAG, "Name: " + firstName + " " + lastName);
             String googleEmail = acct.getEmail();
             Log.d(TAG, "Email: " + googleEmail);
 

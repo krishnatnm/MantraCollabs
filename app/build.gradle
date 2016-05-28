@@ -33,8 +33,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile files('libs/socketio.jar')
     apt "org.androidannotations:androidannotations:3.3.2"
-    compile 'com.android.support:appcompat-v7:23.0.3'
-    compile 'com.android.support:design:23.0.3'
     compile 'com.google.android.gms:play-services-auth:8.4.0'
     compile 'com.squareup.retrofit:retrofit:1.9.0'
     compile 'com.squareup.okhttp:okhttp:2.3.0'
@@ -45,5 +43,4 @@ dependencies {
     compile 'com.google.android.gms:play-services:8.4.0'
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:design:23.4.0'
-    compile 'com.google.android.gms:play-services:8.4.0'
 }
