@@ -31,14 +31,18 @@ dependencies {
     provided 'org.projectlombok:lombok:1.16.4'
     apt 'org.projectlombok:lombok:1.16.4'
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:design:23.4.0'
-    compile 'com.google.android.gms:play-services-auth:8.3.0'
+    compile files('libs/socketio.jar')
+    apt "org.androidannotations:androidannotations:3.3.2"
+    compile 'com.android.support:appcompat-v7:24.0.0-alpha2'
+    compile 'com.android.support:design:24.0.0-alpha2'
+    compile 'com.google.android.gms:play-services-auth:8.4.0'
     compile 'com.squareup.retrofit:retrofit:1.9.0'
     compile 'com.squareup.okhttp:okhttp:2.3.0'
     compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'org.androidannotations:androidannotations-api:3.3.2'
-    apt "org.androidannotations:androidannotations:3.3.2"
     compile 'joda-time:joda-time:2.8.1'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
 }
