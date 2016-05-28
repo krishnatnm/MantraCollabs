@@ -7,7 +7,7 @@
     <dimen name="gplus_button_corner">5dp</dimen>
     <dimen name="gplus_left_height">32dp</dimen>
     <dimen name="gplus_left_width">48dp</dimen>
-    <dimen name="gplus_left_inner_padding">8dp</dimen>
+    <dimen name="gplus_inner_padding">8dp</dimen>
     <dimen name="gplus_button_width">176dp</dimen>
     <dimen name="gplus_font_size">16dp</dimen>
 </resources>
