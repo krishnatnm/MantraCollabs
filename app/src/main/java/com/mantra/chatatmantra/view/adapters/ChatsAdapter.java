@@ -1,11 +1,13 @@
 package com.mantra.chatatmantra.view.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mantra.chatatmantra.Chat.ChatRoomActivity_;
 import com.mantra.chatatmantra.R;
 
 /**
@@ -25,6 +27,12 @@ public class ChatsAdapter extends RecyclerView.Adapter<ChatsAdapter.ViewHolder> 
         View v = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.recyeler_item, viewGroup, false);
         ViewHolder viewHolder = new ViewHolder(v);
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChatRoomActivity_.intent(context).flags(Intent.FLAG_ACTIVITY_NEW_TASK).start();
+            }
+        });
         return viewHolder;
     }
 
@@ -39,8 +47,6 @@ public class ChatsAdapter extends RecyclerView.Adapter<ChatsAdapter.ViewHolder> 
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-
-
         public ViewHolder(View itemView) {
             super(itemView);
 
